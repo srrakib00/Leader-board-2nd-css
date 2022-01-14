@@ -1,8 +1,36 @@
-/* top player   */
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* Common styles and utilities */
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color : #F3F1FF;
+}
+main{
+  display: flex;
+  justify-content: center;
+}
+.container{
+  width: 870px;
+  background-color: #FFFFFF;
+  padding: 30px;
+}
+hr{
+  border: 1px solid #D1D1D1;
+  margin-bottom: 27px;
+
+}
+/* ......top player area start.....  */
+.top-player{
+  margin-bottom: 30px;
+}
+.section-title{
+  color: #562EFF;
+  margin-top: 3px;
+}
 .players{
   display: grid;
   grid-template-columns:repeat(3, 1fr);
-
+  grid-row-gap: 30px;
 }
 .player{
   display: flex;
@@ -11,4 +39,45 @@
 .player img{
   width: 56px;
   height: 56px;
+  margin-left: 30px;
 }
+.player-name{
+  margin-left: 16px;
+  font-size: 18px;
+}
+/* ....................
+Top Players area end ............ */
+/* .....................\
+Top Blog Area Star.............. */
+
+.blogs{
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  grid-row-gap: 25px;
+}
+.blog{
+  display: flex;
+  /* margin-top: 30px; */
+}
+
+.blog .thumbnail img{
+  width: 177px;
+  height: 117px;
+}
+.blog-info{
+  margin-left: 16px;
+}
+.blog-title{
+  font-size: 20px;
+}
+.blog-author{
+  font-size: 16px;
+  color: #9F9F9F;
+}
+.blog-author a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #562EFF;
+}
+/*....... Blog Area End ...... */
+
