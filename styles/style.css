@@ -126,3 +126,34 @@ Top Blog Area Star.............. */
   font-size: 15px;
   border-radius: 15px;
 }
+/* course dertails end  */
+/* mobile device responsive */
+@media only screen and (max-width:688px) {
+  .container{
+    width:100% ;
+  }
+  .players,.blogs,.courses{
+    grid-template-columns:repeat(1,1fr) ;
+  }
+  .players,.blogs{
+    flex-direction: column;
+  }
+}
+/* teblet devices  */
+@media only screen and (min-width:688px) (max-width:992px){
+  .container{
+    width:100%;
+  }
+  .players,.courses{
+    grid-template-columns: repeat(2,1fr);
+
+  }
+  .blogs{
+    grid-template-columns: repeat(1,1fr);
+  }
+} 
+
+  
+
+
+
